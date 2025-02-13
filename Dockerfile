@@ -14,3 +14,4 @@ COPY --from=builder /app/dist/app /app/dist
 COPY --from=builder /app/storage /app/storage
 
 ENTRYPOINT [ "/app/dist" ]
+CMD ["http"]
